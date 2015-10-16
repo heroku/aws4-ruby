@@ -21,7 +21,7 @@ module AWS4
       @uri = uri
       @headers = headers
       @body = body
-      @service = @uri.host.split(".", 2)[0]
+      @service = @uri.host.split(".")[2]
       date_header = headers["Date"] || headers["DATE"] || headers["date"]
       @date = (date_header ? Time.parse(date_header) : Time.now).utc.strftime(RFC8601BASIC)
       dump if debug
