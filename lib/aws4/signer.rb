@@ -90,11 +90,11 @@ module AWS4
     end
 
     def dump
-      puts "string to sign"
+      puts "====== string to sign"
       puts string_to_sign
-      puts "canonical_request"
+      puts "====== canonical_request"
       puts canonical_request
-      puts "authorization"
+      puts "====== authorization"
     end
   end
 end
