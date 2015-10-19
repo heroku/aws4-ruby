@@ -94,7 +94,8 @@ module AWS4
       puts string_to_sign
       puts "====== canonical_request"
       puts canonical_request
-      puts "====== authorization"
+      puts "====== credential_string"
+      puts credential_string
     end
   end
 end
